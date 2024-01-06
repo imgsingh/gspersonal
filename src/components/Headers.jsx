@@ -79,6 +79,7 @@ const Headers = () => {
       left={0}
       right={0}
       translateY={0}
+      overflowY="auto"
       zIndex={10}
       transitionProperty="transform"
       transitionDuration=".3s"

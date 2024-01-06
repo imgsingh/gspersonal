@@ -13,6 +13,13 @@ const projects = [
     showImage : true
   },
   {
+    title: 'Image Gallery',
+    description: 'This project is an image gallery which uses splash api for data. This uses react with redux and saga.',
+    getImageSrc: () => require('../assets/image/image-gallery.png'),
+    showImage : true,
+    link : 'https://imgsingh.github.io/Image-Gallery'
+  },
+  {
     title: 'QuizMasters',
     description:
       'A quiz game with 4 options and based on correct answers user will win or lose. A vertical bar implemented for the number of questions correctly answered and money winned.',
@@ -42,12 +49,13 @@ const ProjectsSection = () => {
           gridTemplateColumns="repeat(2,minmax(0,1fr))"
           gridGap={8}
         >
-          {projects.map(({title, description, getImageSrc, showImage}) => (
+          {projects.map(({title, description, getImageSrc, showImage, link}) => (
             <Fragment key={title}>
               <Card 
                 title={title}
                 description={description}
                 getImageSrc={getImageSrc()}
+                link={link}
               />
               {
                 showImage ? <Image src={getImageSrc()} alt={title} borderRadius="lg" /> : ''

@@ -1,8 +1,8 @@
 {
-  "name": "gspersonal",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://imgsingh.github.io",
+  "homepage": "https://imgsingh.github.io/portfolio",
   "dependencies": {
     "@babel/eslint-parser": "^7.5.4",
     "@chakra-ui/react": "^2.7.1",
